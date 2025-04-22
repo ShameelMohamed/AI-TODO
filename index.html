@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI TODO App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI TODO App</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+            <button onclick="addTask()" id="addButton">Add Task</button>
+        </div>
+        <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+            Analyzing task priority...
+        </div>
+        <div class="tasks-container">
+            <h2>Tasks</h2>
+            <div id="tasksList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
