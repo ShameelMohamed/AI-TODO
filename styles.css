@@ -5,10 +5,17 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1;
 }
 
 h1 {
@@ -116,8 +123,9 @@ button:hover {
 .footer {
     background-color: #f8f9fa;
     padding: 20px 0;
-    margin-top: 40px;
     border-top: 1px solid #e9ecef;
+    margin-top: auto;
+    width: 100%;
 }
 
 .footer-content {
