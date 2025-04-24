@@ -2,5 +2,6 @@
 
 deployed version - https://ai-todo-seven.vercel.app/
 
-![image](https://github.com/user-attachments/assets/15aa5d91-ae99-4ebf-a91b-00eb0a8fe4a0)
+![image](https://github.com/user-attachments/assets/89bd07f0-9f40-4e48-a46e-315899688950)
+
 
