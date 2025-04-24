@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     flex: 1;
+    width: 100%;
 }
 
 h1 {
@@ -28,10 +29,12 @@ h1 {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 input[type="text"] {
     flex: 1;
+    min-width: 200px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -46,6 +49,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 button:hover {
@@ -60,6 +64,8 @@ button:hover {
     margin-bottom: 10px;
     border-radius: 4px;
     border-left: 5px solid #ccc;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .task-item.high-priority {
@@ -76,11 +82,14 @@ button:hover {
 
 .task-content {
     flex: 1;
+    min-width: 200px;
+    word-break: break-word;
 }
 
 .task-actions {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .task-item.completed {
@@ -93,6 +102,7 @@ button:hover {
     border-radius: 12px;
     font-size: 12px;
     margin-left: 10px;
+    white-space: nowrap;
 }
 
 .high-priority .priority-badge {
@@ -135,6 +145,7 @@ button:hover {
     color: #6c757d;
     font-size: 14px;
     line-height: 1.6;
+    padding: 0 20px;
 }
 
 .footer-content p {
@@ -150,15 +161,33 @@ button:hover {
     text-decoration: underline;
 }
 
-.github-link {
-    margin: 10px 0;
-}
-
-.github-link a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-.github-link a:hover {
-    text-decoration: underline;
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .input-section {
+        flex-direction: column;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    .task-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .task-actions {
+        justify-content: stretch;
+    }
+    
+    .task-actions button {
+        flex: 1;
+    }
 } 
